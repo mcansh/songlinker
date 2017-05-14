@@ -13,10 +13,11 @@ app.get('/', (req, res, next) => {
         var $ = cheerio.load(body);
         var links = [];
 
-        $('div.page-content div').children().each((i, elem) => {
+        $('div.page-content div').children().each((_, elem) => {
             links.push($(elem).attr('href'));
         });
 
+        links = links.splice(2, 5);
         res.send(links);
     });
 });
