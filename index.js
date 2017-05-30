@@ -11,7 +11,7 @@ app.get('/', (req, res, next) => {
   const query = url + req.query.url;
   request(query, (err, req, body) => {
     const $ = cheerio.load(body);
-    const links = [];
+    var links = [];
 
     $('div.page-content div').children().each((_, elem) => {
       links.push($(elem).attr('href'));
