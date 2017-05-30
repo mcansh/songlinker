@@ -8,7 +8,7 @@ don't sue me pls
 usage
 -----
 
-clone, `yarn install`, `node index`. `localhost:8030/?url=URL`
+clone, `yarn install`, `yarn start`. `localhost:8030/?url=URL`
 
 ```
 http://localhost:8030/?url=https://open.spotify.com/track/4fbvXwMTXPWaFyaMWUm9CR
