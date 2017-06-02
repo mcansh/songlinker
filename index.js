@@ -12,13 +12,14 @@ app.get('/*', (req, res, next) => {
   const query = url + queryURL;
   request(query, (err, req, body) => {
     const $ = cheerio.load(body);
-    let links = [];
+    const links = [];
 
-    $('div.page-content div').children().each((_, elem) => {
-      links.push($(elem).attr('href'));
+    $('div.page-content div:first-of-type').children().each((_, elem) => {
+      if ($(elem).attr('href')) {
+        links.push($(elem).attr('href'));
+      }
     });
 
-    links = links.splice(2, 5);
     res.send(links);
   });
 });
