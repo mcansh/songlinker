@@ -8,11 +8,11 @@ don't sue me pls
 usage
 -----
 
-clone, `yarn install`, `yarn start`. `localhost:8030/?url=URL`
+clone, `yarn install`, `yarn start`. `localhost:8030/URL`
 
 ```
-http://localhost:8030/?url=https://open.spotify.com/track/4fbvXwMTXPWaFyaMWUm9CR
-http://localhost:8030/?url=https://itun.es/ca/1uxdR?i=722302464
+http://localhost:8030/https://open.spotify.com/track/4fbvXwMTXPWaFyaMWUm9CR
+http://localhost:8030/https://itun.es/ca/1uxdR?i=722302464
 ```
 
 license
